@@ -32,7 +32,9 @@
       </dt>
       <dd>
       <% department = Department.where({ :id => @the_course.department_id }).at(0) %>
-      <a href="/departments/<%= @the_course.department_id %>"><%= @the_course.department_id %></a>
+      <a href="/departments/<%= department.id%>"><%= department.name %></a>
+
+
       </dd>
 
       <dt>
